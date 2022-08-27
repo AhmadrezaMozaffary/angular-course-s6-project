@@ -1,12 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href="#" class="navbar-brand mb-0 h1">Recipe Book</a>
+      <a href="#" class="navbar-brand mb-0 h1" (click)="onSelect('recipes')">Recipe Book</a>
     </div>
     <div class="collapse navbar-collapse d-flex-lg justify-content-lg-between">
       <ul class="navbar-nav">
-        <li class="nav-item"><a href="#" class="nav-link">Recipes</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Shopping List</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" (click)="onSelect('recipes')">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" (click)="onSelect('shoppingList')"
+            >Shopping List</a
+          >
+        </li>
       </ul>
       <ul class="nav navbar-nav my-2 my-lg-0">
         <li class="nav-item dropdown">
