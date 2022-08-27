@@ -7,7 +7,7 @@ import { Recipe } from './recipe.model';
   styleUrls: ['./recipes.component.css'],
 })
 export class RecipesComponent implements OnInit {
-  detailsData: Recipe = { name: '', description: '', imagePath: '' };
+  detailsData: Recipe | undefined;
 
   constructor() {}
 
