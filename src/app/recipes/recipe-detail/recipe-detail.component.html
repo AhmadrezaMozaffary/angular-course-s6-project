@@ -1,11 +1,11 @@
   <div class="row">
     <div class="col-xs-12">
-      <img src="" alt="NOT ADDED" />
+      <img [src]="recipeData.imagePath" alt="NOT ADDED" />
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <h1>Recipe Name</h1>
+      <h1>{{recipeData.name}}</h1>
     </div>
   </div>
   <div class="row">
@@ -23,8 +23,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12">Desctiption</div>
+    <div class="col-xs-12">{{recipeData.description}}</div>
   </div>
   <div class="row">
-    <div class="col-xs-12">Ings</div>
+    <div class="col-xs-12">Ingredients</div>
   </div>
