@@ -7,8 +7,7 @@ import { Recipe } from '../../recipe.model';
   styleUrls: ['./recipe-item.component.css'],
 })
 export class RecipeItemComponent implements OnInit {
-  @Input() recipe: Recipe = {name: '', description: '', imagePath:''};
-
+  @Input() recipe: Recipe = new Recipe();
   constructor() {}
 
   ngOnInit(): void {}
